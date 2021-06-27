@@ -1,0 +1,26 @@
+.app {
+  height: 100vh;
+  background-color: black;
+  display: grid;
+  place-items: center;
+}
+
+.app__videos {
+  position: relative;
+  height: 800px;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 20px;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+/* Remove scrollbar => Top: IE, Edge, Firefox, Bottom: Chrome, Safari, Opera*/
+.app__videos {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.app__videos::-webkit-scrollbar {
+  display: none;
+}
